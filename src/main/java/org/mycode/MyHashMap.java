@@ -1,3 +1,8 @@
+/*
+ * Task 5
+ *
+ * Design a HashMap without using any built-in hash table libraries.
+ */
 package org.mycode;
 
 import java.util.ArrayList;
