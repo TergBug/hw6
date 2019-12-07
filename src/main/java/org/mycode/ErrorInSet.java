@@ -4,10 +4,10 @@ import java.util.*;
 
 public class ErrorInSet {
     public ArrayList<int[]> findErrorInSet(int[] mas){
-        if(mas==null || mas.length<2 || mas.length>10000) return null;
+        if((mas == null) || (mas.length < 2) || (mas.length > 10000)) return null;
         Map<Integer, Integer> errorsMap = new HashMap<>();
         for (int i = 0; i < mas.length; i++) {
-            if(mas[i]>mas.length || mas[i]<1) return null;
+            if((mas[i] > mas.length) || (mas[i] < 1)) return null;
             errorsMap.put(i+1, mas[i]);
         }
         for (int i = 1; i <= mas.length; i++) {
